@@ -1,0 +1,13 @@
+services:
+  react-projext-dev:
+    container_name: react-project-container
+    image: react-project-dev-image
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/Styling
+      - /Styling/node_modules
+    command: npm run dev
