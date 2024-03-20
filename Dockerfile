@@ -1,4 +1,4 @@
-FROM node:20.10.0-slim AS development
+FROM node:20.10.0-slim
 WORKDIR /Styling
 COPY package.json .
 RUN npm install
